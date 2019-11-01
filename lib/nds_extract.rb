@@ -11,7 +11,6 @@ def directors_totals(nds)
     end
     hash[director_hash[:name]] = total
    # binding.pry
-    pp total
   end 
   hash
 end
