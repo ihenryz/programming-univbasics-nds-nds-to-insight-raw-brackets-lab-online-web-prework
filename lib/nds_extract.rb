@@ -4,8 +4,7 @@ require 'pry'
 
 def directors_totals(nds)
   hash = {}
-  nds.each do |director_hash| 
-    total = 0
+  nds.each { |director_hash| total = 0}
     director_hash[:movies].each do |movie|
         total += movie[:worldwide_gross]
     end
@@ -15,6 +14,20 @@ def directors_totals(nds)
   end 
   hash
 end
+
+# def directors_totals(nds)
+#   hash = {}
+#   nds.each do |director_hash| 
+#     total = 0
+#     director_hash[:movies].each do |movie|
+#         total += movie[:worldwide_gross]
+#     end
+#     hash[director_hash[:name]] = total
+#     binding.pry
+#     pp total
+#   end 
+#   hash
+# end
 
 
 
