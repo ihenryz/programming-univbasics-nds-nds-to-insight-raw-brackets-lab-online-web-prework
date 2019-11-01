@@ -10,7 +10,7 @@ def directors_totals(nds)
         total += movie[:worldwide_gross]
     end
     hash[director_hash[:name]] = total
-    binding.pry
+   # binding.pry
     pp total
   end 
   hash
