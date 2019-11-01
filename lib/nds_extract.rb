@@ -15,7 +15,6 @@ def directors_totals(nds)
   end 
   hash
 end
-end
 
 
 
